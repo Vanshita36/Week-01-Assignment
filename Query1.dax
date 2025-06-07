@@ -1,0 +1,6 @@
+﻿EVALUATE
+EXCEPT (
+    DISTINCT('Total Orders'[CustomerID]),
+  
+	SELECTCOLUMNS('Customers', "CustomerID", 'Customers'[CustomerID])
+)
